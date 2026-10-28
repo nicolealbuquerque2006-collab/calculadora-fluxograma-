@@ -1,8 +1,9 @@
 # 🧮 Calculadora Multifuncional
 
-> Fluxograma de uma calculadora com menu de 10 funções, desenvolvido em **Flowgorithm** para aplicar conceitos de lógica de programação.
+> Fluxograma de uma calculadora com menu de 10 funções, desenvolvido em **Flowgorithm** para aplicar conceitos de lógica de programação, com uma versão estendida em **linguagem C**.
 
 ![Ferramenta](https://img.shields.io/badge/Flowgorithm-fluxograma-orange)
+![Linguagem](https://img.shields.io/badge/linguagem-C-blue)
 ![Status](https://img.shields.io/badge/status-concluído-brightgreen)
 ![Licença](https://img.shields.io/badge/licença-MIT-blue)
 
@@ -27,34 +28,34 @@ Desenvolver, em Flowgorithm, um fluxograma para uma Calculadora Multifuncional q
 
 - **[Flowgorithm](http://www.flowgorithm.org/)**: ferramenta gratuita para criar e executar programas em forma de fluxograma
 - Funções internas do Flowgorithm: `Sqrt()` e a constante `pi`
+- **Linguagem C** (versão estendida), com as bibliotecas `stdio.h`, `stdlib.h` e `math.h`
 
 ## ▶️ Como executar
 
-### Pré-requisitos
-- Windows
-- [Flowgorithm](http://www.flowgorithm.org/download/) instalado
+### Fluxograma (Flowgorithm)
 
-### Passo a passo
+**Pré-requisitos:** Windows e o [Flowgorithm](http://www.flowgorithm.org/download/) instalado.
 
-1. Baixe este repositório: clique no botão verde **Code → Download ZIP** e extraia a pasta (ou use `git clone` com o link do botão **Code**).
+1. Baixe este repositório: clique no botão verde **Code → Download ZIP** e extraia a pasta.
 2. Abra o Flowgorithm.
-3. Vá em **File → Open** e selecione o arquivo `.fprg` deste repositório.
+3. Vá em **File → Open** e selecione o arquivo `CalculadoraMultifuncional (1).fprg`.
 4. Clique em **Run** (▶) ou pressione **F5**.
 5. Na janela do console, digite o número da opção desejada e siga as instruções na tela.
 
-## 🖼️ Demonstração
+### Versão em C
 
-### Fluxograma
+**Opção 1: no navegador, sem instalar nada**
+1. Acesse [onlinegdb.com](https://www.onlinegdb.com/online_c_compiler).
+2. Apague o código de exemplo e cole o conteúdo do arquivo `calculadora.c`.
+3. Clique em **Run**.
 
-![Fluxograma da calculadora](./docs/fluxograma.png)
+**Opção 2: no computador (com GCC instalado)**
+```bash
+gcc calculadora.c -o calculadora -lm
+./calculadora
+```
 
-### Programa em execução
-
-![Menu principal](./docs/execucao-menu.png)
-
-![Exemplo de cálculo](./docs/execucao-calculo.png)
-
-## ⚙️ Descrição das 10 funções de cálculo
+## ⚙️ Descrição das 10 funções de cálculo (fluxograma)
 
 1. **Soma**: soma dois números reais informados pelo usuário (n1 + n2).
 2. **Subtração**: subtrai o segundo número do primeiro (n1 - n2).
@@ -68,7 +69,11 @@ Desenvolver, em Flowgorithm, um fluxograma para uma Calculadora Multifuncional q
 10. **Média Aritmética**: calcula a média de três números ((n1 + n2 + n3) / 3).
 11. **Encerrar**: finaliza o programa, saindo do laço principal.
 
-## 🔄 Lógica de funcionamento
+## ➕ Versão estendida em C
+
+O arquivo `calculadora.c` amplia a ideia do fluxograma para **20 operações**, incluindo resto da divisão, porcentagem, fatorial, número primo, tabuada, maior e menor valor, área, perímetro e volume de várias figuras, Teorema de Pitágoras, equação do 2º grau (Bhaskara), distância entre pontos e conversão entre graus e radianos. Ele também valida a entrada: se o usuário digitar uma letra no lugar de um número, o programa pede o valor de novo em vez de travar.
+
+## 🔄 Lógica de funcionamento (fluxograma)
 
 - A variável `opcao` é inicializada com `0` antes do menu começar.
 - Um laço `While (opcao <> 11)` mantém o programa em execução enquanto a opção não for "Encerrar".
@@ -97,8 +102,8 @@ As operações de **Divisão** e **Raiz Quadrada** têm uma segunda camada de de
 ## 📁 Estrutura do repositório
 
 ```
-├── calculadora.fprg   # fluxograma do Flowgorithm
-├── docs/              # prints do fluxograma e da execução
+├── CalculadoraMultifuncional (1).fprg   # fluxograma do Flowgorithm
+├── calculadora.c                        # versão estendida em C
 ├── LICENSE
 ├── .gitignore
 └── README.md
@@ -106,4 +111,4 @@ As operações de **Divisão** e **Raiz Quadrada** têm uma segunda camada de de
 
 ## 📝 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.ais detalhes.
